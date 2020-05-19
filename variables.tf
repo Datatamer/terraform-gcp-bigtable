@@ -18,7 +18,7 @@ variable "initial_num_nodes" {
   type        = number
   description = "The number nodes to start the cluster with"
   # NOTE: if using a newer provider you can set to this 1
-  default     = 3
+  default = 3
 }
 
 variable "zone" {
