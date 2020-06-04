@@ -18,7 +18,7 @@ variable "initial_num_nodes" {
   type        = number
   description = "The number nodes to start the cluster with"
   # NOTE: if using a newer provider you can set to this 1
-  default = 3
+  default = 1
 }
 
 variable "zone" {
@@ -32,4 +32,10 @@ variable "storage_type" {
   type        = string
   description = "The storage type for the cluster"
   default     = "SSD"
+}
+
+variable "cloud_bigtable_admin_members" {
+  type        = list(string)
+  description = "The list of members to bind to bigtable admin role"
+  default     = []
 }
