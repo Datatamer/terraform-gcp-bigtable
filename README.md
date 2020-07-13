@@ -11,13 +11,13 @@ This modules creates the following resources:
 | Name | Version |
 |------|---------|
 | terraform | >= 0.12 |
-| google | >= 3.18.0 |
+| google | >= 3.24.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| google | >= 3.18.0 |
+| google | >= 3.24.0 |
 
 ## Inputs
 
@@ -32,7 +32,10 @@ This modules creates the following resources:
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| bigtable\_cluster\_id | the bigtable cluster id |
+| bigtable\_instance\_id | the bigtable instance id |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
