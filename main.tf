@@ -21,6 +21,8 @@ resource "google_bigtable_instance" "bigtable_instance" {
   instance_type = "PRODUCTION"
   project       = var.project
 
+  deletion_protection = var.deletion_protection
+
   cluster {
     cluster_id   = local.cluster_name
     zone         = var.zone
