@@ -39,3 +39,9 @@ variable "cloud_bigtable_admin_members" {
   description = "The list of members to bind to bigtable admin role"
   default     = []
 }
+
+variable "deletion_protection" {
+  type        = bool
+  description = "set deletion protection on bigtable stack"
+  default     = true
+}
