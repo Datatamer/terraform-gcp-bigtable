@@ -17,9 +17,8 @@ resource "google_project_service" "enable_bigtable_admin_apis" {
 }
 
 resource "google_bigtable_instance" "bigtable_instance" {
-  name          = var.name
-  instance_type = "PRODUCTION"
-  project       = var.project
+  name    = var.name
+  project = var.project
 
   deletion_protection = var.deletion_protection
 
