@@ -10,14 +10,14 @@ This modules creates the following resources:
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
-| google | >= 3.24.0 |
+| terraform | >= 1.0.0 |
+| google | >= 4.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| google | >= 3.24.0 |
+| google | >= 4.6.0 |
 
 ## Inputs
 
@@ -26,6 +26,7 @@ This modules creates the following resources:
 | name | The name of the bigtable instance. NOTE Length should be between [6,33] | `string` | n/a | yes |
 | project | The project the cluster should be deployed to | `string` | n/a | yes |
 | cloud\_bigtable\_admin\_members | The list of members to bind to bigtable admin role | `list(string)` | `[]` | no |
+| deletion\_protection | set deletion protection on bigtable stack | `bool` | `true` | no |
 | initial\_num\_nodes | The number nodes to start the cluster with | `number` | `1` | no |
 | storage\_type | The storage type for the cluster | `string` | `"SSD"` | no |
 | zone | The zone for the cluster to be created in | `string` | `"us-east1-b"` | no |
