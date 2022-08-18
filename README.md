@@ -1,6 +1,11 @@
 # terraform-gcp-bigtable
 Terraform repo for terraform-gcp-bigtable
 
+# Examples
+## Minimal
+This is the most basic example of what it would look like to use this module
+- [Minimal](https://github.com/Datatamer/terraform-gcp-tamr-bigtable/tree/master/examples/minimal)
+
 # Resources Created
 This modules creates the following resources:
 * cloud bigtable instance
@@ -11,13 +16,13 @@ This modules creates the following resources:
 | Name | Version |
 |------|---------|
 | terraform | >= 1.0.0 |
-| google | >= 4.6.0 |
+| google | >= 4.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| google | >= 4.6.0 |
+| google | >= 4.0 |
 
 ## Inputs
 
