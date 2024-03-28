@@ -1,6 +1,6 @@
 module "minimal" {
   source = "../../"
 
-  name = var.name
+  name    = var.name
   project = var.project
 }
