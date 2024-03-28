@@ -1,18 +1,30 @@
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-No provider.
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_minimal"></a> [minimal](#module\_minimal) | ../../ | n/a |
+
+## Resources
+
+No resources.
 
 ## Inputs
 
-No input.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | n/a | `string` | n/a | yes |
 
 ## Outputs
 
-No output.
-
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+No outputs.
+<!-- END_TF_DOCS -->
