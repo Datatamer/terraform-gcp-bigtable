@@ -45,3 +45,9 @@ variable "deletion_protection" {
   description = "set deletion protection on bigtable stack"
   default     = true
 }
+
+variable "force_destroy" {
+  type        = bool
+  description = "set force delete (of backups) on bigtable stack destruction"
+  default     = false
+}

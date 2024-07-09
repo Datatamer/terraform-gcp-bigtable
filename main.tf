@@ -21,6 +21,7 @@ resource "google_bigtable_instance" "bigtable_instance" {
   project = var.project
 
   deletion_protection = var.deletion_protection
+  force_destroy       = var.force_destroy
 
   cluster {
     cluster_id   = local.cluster_name
